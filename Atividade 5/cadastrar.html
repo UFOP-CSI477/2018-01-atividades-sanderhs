@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<meta charset="utf-8">
+	<title>Formulário</title>
+</head>
+<body>
+
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="cadastrar.html">Cadastrar</a></li>
+		<li><a href="listar.html">Listar</a></li>
+		<li><a href="">Sair</a></li>
+	</ul>
+
+	<h1 id="titulo">Dados Cadastrais</h1>
+	<form id="formulario" method="post" action="validar.html">
+
+	<label id="titulolabel" for="nome">Nome</label>
+	<input type="text" name="Nome" placeholder="Digite o nome">
+	<br><br>
+	<label id="titulolabel" for="endereço">Matrícula</label>
+	<input type="text" name="Matricula" placeholder="Digite a matrícula">
+	<br><br>
+	<label id="titulolabel" for="endereço">Endereço</label>
+	<input type="text" name="Endereço" placeholder="Digite o endereço">
+	<br><br>
+	<label id="titulolabel" for="nome">Telefone</label>
+	<input type="text" name="Telefone" placeholder="Digite o telefone">
+	<br><br>
+	<label id="titulolabel" for="genero">Gênero</label>
+	<br><br>
+	<input id="titulolabel" type="radio" name="genero" id="feminino" value="F">Feminino
+	<br>
+	<input type="radio" name="genero" id="masculino" value="M">Masculino
+	<br>
+	<input type="radio" name="genero" id="naobinario" value="N">Não binário
+	<br><br>
+	<label>Área de Interesse</label>
+	<br><br>
+	<input type="checkbox" name="web" id="web">
+	<label>Web</label>
+	<br>
+	<input type="checkbox" name="bd" id="bd">
+	<label>Banco de Dados</label>
+	<br>
+	<input type="checkbox" name="bd" id="bd">
+	<label>Inteligência Artificial</label>
+	<br>
+	<input type="checkbox" name="bd" id="bd">
+	<label>Gestão da Informação</label>
+	<br>
+	<input type="checkbox" name="redes" id="redes">
+	<label>Redes</label>
+	<br><br>
+
+	<label id="titulolabel" for="cidade">Cidade</label>
+	<br><br>
+	<select name="cidade">
+		<option value="0" selected="true">Selecione</option>
+		<option value="1">Nova Lima</option>
+		<option value="2">João Monlevade</option>
+		<option value="3">Itabira</option>
+		<option value="4">Belo Horizonte</option>
+	</select>
+
+	<br><br>
+
+	<label id="titulolabel" for="usuario">Usuário</label>
+	<br>
+	<input type="text" name="usuario">
+	<br><br>
+	<label id="titulolabel" for="usuario">Senha</label>
+	<br>
+	<input type="password" name="senha">
+
+	<br><br>
+
+
+	<input type="submit" value="Cadastrar">
+	<input type="reset" value="Limpar">
+	<br><br>
+	<a href="index.html">Voltar</a>
+
+	</form>
+	<br>
+</body>
+</html>
