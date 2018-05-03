@@ -22,7 +22,7 @@
 
   // calcula IMC
   var resultado = (peso / (altura * altura));
-  var pesoideal = (resultado*(altura*altura));
+  var pesoideal = (20 *(altura*altura));
   var message = '';
   var titulo ='';
   var result = '';
