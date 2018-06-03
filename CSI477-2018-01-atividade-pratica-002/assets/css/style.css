@@ -1,0 +1,31 @@
+body{
+	background-color: #1170b9;
+	background-image: url(../img/);
+/*	Brackground creditos: https://www.heropatterns.com/;
+*/
+}
+
+.botao{
+	background-color: #3FBC9B;
+	border: #3FBC9B;
+}
+
+.botao:hover{
+	background-color: #87D2D8;
+	border: #87D2D8;
+}
+
+#titulo{
+	text-align: center;
+}
+
+#iconelogin{
+	height: 150px;
+	margin-bottom: 10px;
+}
+
+
+#logomenu{
+	width: 200px;
+	height: 95px;
+}
