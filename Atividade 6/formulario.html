@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<title>Formulário</title>
+</head>
+<body>
+	<div class="container">
+	<div class="col-md-12" align="center">
+
+	<h1>Dados Cadastrais</h1>
+	<div class="form-group">
+	<form name="RegForm" action="/submit.php" onsubmit="return validacao()" method="post"> 
+	<label id="titulolabel" >Nome</label>
+	<input type="text" class="form-control" name="Nome" placeholder="Digite o nome">
+	<br><br>
+	<label id="titulolabel" for="endereço">Endereço</label>
+	<input type="text" class="form-control" name="Endereco" placeholder="Digite o endereço">
+	<br><br>
+	<label id="titulolabel" for="telefone">Telefone</label>
+	<input type="text" class="form-control" name="Telefone" placeholder="Digite o telefone">
+	<br><br>
+	<label id="titulolabel" for="email">E-mail</label>
+	<input type="text" class="form-control" name="Email" placeholder="Digite o e-mail">
+	<br><br>
+	<label id="titulolabel" for="senha">Senha</label>
+	<input type="password" class="form-control" name="Senha" placeholder="Digite a senha">
+	<br><br>
+	<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01">Opções</label>
+  </div>
+  <select class="custom-select" name="Curso">
+    <option selected>Selecione</option>
+    <option value="1">Engenharia de Computação</option>
+    <option value="2">Engenharia de Produção</option>
+    <option value="3">Sistemas de Informação</option>
+  </select>
+</div>
+
+	<input class="btn btn-primary" type="submit" value="Cadastrar">
+	<input class="btn" type="reset" value="Limpar">
+	<br><br>
+	<a href="index.html">Voltar</a>
+
+	</form>
+</div>
+</div>
+	</div>
+</body>
+
+<script>
+function validacao()								 
+{
+	var nome = document.forms["RegForm"]["Nome"];			 
+	var email = document.forms["RegForm"]["Email"]; 
+	var telefone = document.forms["RegForm"]["Telefone"]; 
+	var curso = document.forms["RegForm"]["Curso"]; 
+	var senha = document.forms["RegForm"]["Senha"]; 
+	var endereco = document.forms["RegForm"]["Endereco"]; 
+
+	if (nome.value == "")								 
+	{
+		window.alert("Digite seu nome");
+		name.focus();
+		return false;
+	}
+
+	if (endereco.value == "")							 
+	{
+		window.alert("Digite seu endereço");
+		endereco.focus();
+		return false;
+	}
+		if (telefone.value == "")						 
+	{
+		window.alert("Digite seu telefone");
+		telefone.focus();
+		return false;
+	}
+	
+	if (email.value == "")								 
+	{
+		window.alert("Digite um e-mail válido");
+		email.focus();
+		return false;
+	}
+
+	if (email.value.indexOf("@", 0) < 0)			 
+	{
+		window.alert("Digite um e-mail válido");
+		email.focus();
+		return false;
+	}
+
+	if (email.value.indexOf(".", 0) < 0)			 
+	{
+		window.alert("Digite um e-mail válido");
+		email.focus();
+		return false;
+	}
+
+
+
+	if (senha.value == "")					 
+	{
+		window.alert("Digite sua senha");
+		senha.focus();
+		return flase;
+	}
+
+	if (curso.selectedIndex < 1)				 
+	{
+		alert("Selecione seu curso");
+		curso.focus();
+		return false;
+	}
+
+	return true;
+}</script>
+</html>

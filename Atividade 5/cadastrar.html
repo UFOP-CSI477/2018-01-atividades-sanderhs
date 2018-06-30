@@ -1,33 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="estilo.css">
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<title>Formulário</title>
 </head>
 <body>
 
-	<ul>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="cadastrar.html">Cadastrar</a></li>
-		<li><a href="listar.html">Listar</a></li>
-		<li><a href="">Sair</a></li>
-	</ul>
+	
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <a class="navbar-brand" href="#">Sistema Web</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" align="right" id="navbarNav">
+	    <ul class="navbar-nav">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="cadastrar.html">Cadastrar</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="listar.html">Listar</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link disabled" href="#">Sair</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
 
-	<h1 id="titulo">Dados Cadastrais</h1>
+	<div class="container">
+	<div class="col-md-12" align="center">
+
+	<h1>Dados Cadastrais</h1>
+	<div class="form-group">
 	<form id="formulario" method="post" action="validar.html">
-
 	<label id="titulolabel" for="nome">Nome</label>
-	<input type="text" name="Nome" placeholder="Digite o nome">
+	<input type="text" class="form-control" name="Nome" placeholder="Digite o nome">
 	<br><br>
 	<label id="titulolabel" for="endereço">Matrícula</label>
-	<input type="text" name="Matricula" placeholder="Digite a matrícula">
+	<input type="text" class="form-control" name="Matricula" placeholder="Digite a matrícula">
 	<br><br>
 	<label id="titulolabel" for="endereço">Endereço</label>
-	<input type="text" name="Endereço" placeholder="Digite o endereço">
+	<input type="text" class="form-control" name="Endereço" placeholder="Digite o endereço">
 	<br><br>
 	<label id="titulolabel" for="nome">Telefone</label>
-	<input type="text" name="Telefone" placeholder="Digite o telefone">
+	<input type="text" class="form-control" name="Telefone" placeholder="Digite o telefone">
 	<br><br>
 	<label id="titulolabel" for="genero">Gênero</label>
 	<br><br>
@@ -57,33 +79,38 @@
 
 	<label id="titulolabel" for="cidade">Cidade</label>
 	<br><br>
-	<select name="cidade">
-		<option value="0" selected="true">Selecione</option>
-		<option value="1">Nova Lima</option>
-		<option value="2">João Monlevade</option>
-		<option value="3">Itabira</option>
-		<option value="4">Belo Horizonte</option>
-	</select>
-
+	<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01">Opções</label>
+  </div>
+  <select class="custom-select" id="inputGroupSelect01">
+    <option selected>Selecione</option>
+    <option value="1">Nova Lima</option>
+    <option value="2">João Monlevade</option>
+    <option value="3">Belo Horizonte</option>
+  </select>
+</div>
 	<br><br>
 
 	<label id="titulolabel" for="usuario">Usuário</label>
 	<br>
-	<input type="text" name="usuario">
+	<input type="text" class="form-control" name="usuario">
 	<br><br>
 	<label id="titulolabel" for="usuario">Senha</label>
 	<br>
-	<input type="password" name="senha">
+	<input type="password" class="form-control" name="senha">
 
 	<br><br>
 
 
-	<input type="submit" value="Cadastrar">
-	<input type="reset" value="Limpar">
+	<input class="btn btn-primary" type="submit" value="Cadastrar">
+	<input class="btn" type="reset" value="Limpar">
 	<br><br>
 	<a href="index.html">Voltar</a>
 
 	</form>
-	<br>
+</div>
+</div>
+	</div>
 </body>
 </html>

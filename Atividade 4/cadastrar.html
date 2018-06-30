@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<meta charset="utf-8">
 	<title>Formulário</title>
 </head>
 <body>
-	<h1>Dados do Cadastro</h1>
-	<form method="post" action="validar.html">
 
-	<label for="nome">Nome</label>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="cadastrar.html">Cadastrar</a></li>
+		<li><a href="listar.html">Listar</a></li>
+		<li><a href="">Sair</a></li>
+	</ul>
+
+	<h1 id="titulo">Dados Cadastrais</h1>
+	<form id="formulario" method="post" action="validar.html">
+
+	<label id="titulolabel" for="nome">Nome</label>
 	<input type="text" name="Nome" placeholder="Digite o nome">
 	<br><br>
-	<label for="endereço">Matrícula</label>
+	<label id="titulolabel" for="endereço">Matrícula</label>
 	<input type="text" name="Matricula" placeholder="Digite a matrícula">
 	<br><br>
-	<label for="endereço">Endereço</label>
+	<label id="titulolabel" for="endereço">Endereço</label>
 	<input type="text" name="Endereço" placeholder="Digite o endereço">
 	<br><br>
-	<label for="nome">Telefone</label>
+	<label id="titulolabel" for="nome">Telefone</label>
 	<input type="text" name="Telefone" placeholder="Digite o telefone">
 	<br><br>
-	<label for="genero">Gênero</label>
+	<label id="titulolabel" for="genero">Gênero</label>
 	<br><br>
-	<input type="radio" name="genero" id="feminino" value="F">Feminino
+	<input id="titulolabel" type="radio" name="genero" id="feminino" value="F">Feminino
 	<br>
 	<input type="radio" name="genero" id="masculino" value="M">Masculino
 	<br>
@@ -45,7 +55,7 @@
 	<label>Redes</label>
 	<br><br>
 
-	<label for="cidade">Cidade</label>
+	<label id="titulolabel" for="cidade">Cidade</label>
 	<br><br>
 	<select name="cidade">
 		<option value="0" selected="true">Selecione</option>
@@ -57,11 +67,11 @@
 
 	<br><br>
 
-	<label for="usuario">Usuário</label>
+	<label id="titulolabel" for="usuario">Usuário</label>
 	<br>
 	<input type="text" name="usuario">
 	<br><br>
-	<label for="usuario">Senha</label>
+	<label id="titulolabel" for="usuario">Senha</label>
 	<br>
 	<input type="password" name="senha">
 

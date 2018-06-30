@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
 	<meta charset="utf-8">
 	<title>Lista de alunos</title>
 </head>
 <body>
 
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="cadastrar.html">Cadastrar</a></li>
+		<li><a href="listar.html">Listar</a></li>
+		<li><a href="">Sair</a></li>
+	</ul>
+
 <table>
-	<h1>Tabela</h1>
+	<h1  id="titulo">Relação de Alunos</h1>
 	<thead>
 	<tr>
 		<th>Nome</th>
@@ -50,8 +58,7 @@
 	</tbody>
 	<tfoot>
 		<tr>
-		<td colspan="2">Total de alunos:</td>
-		<td>5</td>
+		<td id="resultado" colspan="4">Total de alunos: 5</td>
 	</tr>
 	</tfoot>
 </table>
