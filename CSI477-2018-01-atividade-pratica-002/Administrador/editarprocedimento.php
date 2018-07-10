@@ -21,7 +21,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label>Nome</label>
-                                                <input  type="text" name="name" value="<?php echo $procedure->name ?>" class="form-control" >
+                                                <input  type="text" name="name" value="<?php echo $produto->name ?>" class="form-control" >
                                             </div>
                                         </div>
                                         <div class="col-md-6">

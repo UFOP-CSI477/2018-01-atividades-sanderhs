@@ -52,7 +52,7 @@ if(isset($_POST['delete'])){
                                     <tbody>
                                         
                                         <?php 
-                                          $stmt = $classProcedures->index();
+                                          $stmt = $classProcedure->index();
                                          while($row = $stmt->fetch(PDO::FETCH_OBJ)){
                                         ?>
                                         <tr>

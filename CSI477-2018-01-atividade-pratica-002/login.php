@@ -94,16 +94,14 @@
     <form action="login.php" method="post">
 	  <div class="form-group" style="font-family: 'Montserrat', sans-serif;">
 	    <label for="amplitude">Login</label>
-	    <input type="text" name="email" class="form-control" id="amplitude"  placeholder="">
+	    <input type="text" name="email" class="form-control"  placeholder="">
 	  </div>
 	  <div class="form-group" style="font-family: 'Montserrat', sans-serif;">
 	    <label for="tempo">Senha</label>
-	    <input type="password" name="password" class="form-control" id="tempo" placeholder="" >
+	    <input type="password" name="password" class="form-control"  placeholder="" >
 	  </div>
 	 <button type="password" class="btn btn-primary btn-block botao" value="" name="login" >Entrar</button>
-	  <a href="#0" data-toggle="modal" data-target="#modalcadastrar"><small>
-  Não possui cadastro? Clique aqui</small>
-</a>
+
 
 	
 	</form>
